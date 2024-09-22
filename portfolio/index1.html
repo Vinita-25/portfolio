@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+       
+        header{
+            width: 100%;
+            min-height: 100px;
+            border: 1px solid red;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            overflow: hidden;
+            visibility:visible;
+            position: sticky;
+            left: 0;
+            top: 0;
+            background-color:white;
+             color: black;
+        }
+        nav{
+            width: 100%;
+            min-height: 100px;
+            border: 1px solid blue;
+            display: flex;
+            justify-content: space-between;
+            align-items: center; 
+            padding: 10px; 
+        }
+        nav ul{
+            width: 80%;
+            /* border: 1px solid black; */
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            gap: 40px;
+            padding-right: 20px;
+            text-decoration: none;
+            list-style-type: none;
+            font-size: 18px;
+            
+        }
+        section{
+            width: 100%;
+            min-height: 100vh;
+            border: 1px solid red;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            /* background-image: url("woman-sits-platform-front-neon-light_916191-314250.avif"); */
+             
+
+         } 
+    
+         div{
+            width: 50%;
+            min-height: 500px;
+            /* border: 1px solid blue; */
+             display: flex;
+            justify-content: center;
+            align-items: center;
+            
+        } 
+         .d1{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            gap: 20px;
+            font-size: 20px;
+            /* border: 1px solid blue;  */
+
+            
+         } 
+         img{
+            width: 50%;
+            height: 400px;
+            /* border-radius: 50%; */
+        }
+        [type=button]{
+            padding: 10px;
+            border-radius: 10px;
+        }
+        #main_img{
+            border-radius: 50%;
+        }
+        div.d2{
+            width: 50%;
+            min-height: 500px; 
+             /* border: 1px solid blue;  */
+            display: flex;
+            justify-content: center;
+            align-items: normal;
+            flex-direction:column;
+            padding: 20px;
+            font-size: 20px;
+            
+        }
+         
+        .img{
+            width: 50%;
+            height: 400px;
+             display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap; 
+            
+        }
+        #img{
+            width: 40px;
+            height: 40px;
+    
+        }
+        .lang{
+            display: flex;
+            align-items: center;
+            justify-content: start;
+            gap: 20px;
+        }
+        #proj{
+            width: 100%;
+            min-height: 500px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            /* flex-direction: column; */
+            gap: 10px;
+        }
+        span{
+            width: 20%;
+            min-height: 500px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            border: 2px solid black;
+            gap: 50px;
+            border-radius: 20px;
+            padding: 10px;
+        }
+        #pj{
+            width: 100%;
+            height: 200px;
+        }
+         .d3{
+            flex-direction: column;
+            /* border: 2px solid red; */
+
+        }
+        aside{
+            width: 50%;
+            height: 80px;
+            /* border: 2px solid red; */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 5px;
+
+        }
+        #contact{
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+        .d4{
+            /* border: 2px solid red; */
+            display: flex;
+            justify-content: start;
+            align-items: center;
+            gap: 20px;
+            flex-wrap: wrap;
+            padding: 40px;
+            flex-wrap: wrap;
+            font-size: 15px;
+        } 
+        .d4 input{
+            width: 300px;
+            height: 30px;
+            font-size: 15px;
+
+        }
+        .contact{
+                display: flex;
+                justify-content: center;
+                align-items: start;
+                flex-direction: column;
+                gap: 20px;
+        }
+        #cont{
+                display: flex;
+                justify-content: center;
+                align-items: start;
+                flex-direction: column;
+                /* border: 1px solid red; */
+                gap: 0px;
+        }
+        .last{
+                font-size:50px;
+        }
+        .d5{
+            width: 80%;
+            flex-wrap: wrap;
+        }
+        form{
+            font-size: 15px;
+        }
+        @media(max-width : 750px){
+            header nav{
+                flex-direction: column;
+                text-decoration: none;
+                gap:10px;
+            }
+            header ul{
+                justify-content: center;
+                text-decoration: none;
+                list-style-type: none;
+                gap: 10px;
+                font-size: medium;
+            } 
+            img{
+                width: 80%;
+            }
+            div{
+                width: 100%;
+                /* border: 2px solid red; */
+            }
+            .d2{
+                /* width: 100%; */
+                border: 2px solid red;
+            }
+            .lang{
+                flex-wrap: wrap;
+                flex-direction: row;
+            }
+            section{
+                flex-direction: column;
+                flex-wrap: wrap;
+            }
+            #img{
+                flex-wrap: wrap;
+            }
+            main{
+                flex-direction: column;
+                flex-wrap: wrap;
+            }
+            aside{
+                flex-direction: column-reverse;
+                flex-wrap: wrap; 
+                /* padding: 10px; */
+                gap: 0px;
+            }
+            #count{
+                gap: 0px;
+
+            }
+            
+            span{
+                width: 60%;
+                padding: 10px;
+            }
+            .d4 input{
+                 width: 150px;
+                 height: 20px;
+            }
+            .d5{
+                flex-direction: column;
+                flex-wrap: wrap;
+            }
+          
+        } 
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <h2>portfolio</h2>
+            <ul>
+                <li><a href="#home" class="nav-link"><strong>HOME</strong></a></li>
+                <li><a href="#about" class="nav-link"><strong>ABOUT</strong></a></li>
+                 <li><a href="#skills" class="nav-link"><strong>PROJECT</strong></a></li>
+                <li><a href="#contact" class="nav-link"><strong>CONTACT</strong></a></li>
+            </ul>
+        </nav>
+    </header>
+
+
+      <section id="home">
+        <div >
+            <img src="main.jpg" alt="img" id="main_img">
+        </div>
+        <div class="d1">
+            <h3>Vinita Nikam</h3>
+            <h1>Hi,I'm a WEB DEVELOPER</h1>
+            <a href="Vinita Nikam _ Full Stack Developer 1_removed.pdf" download="vinita nikam full stack Developer"><input type="button" value="Download Resume"></a>
+        </div>
+       
+    </section>  
+
+
+    <section id="about">
+        <div>
+            <img src="vinu photo.jpg" alt="img">
+        </div>
+        <div class="d2">
+            <h3>Name : Vinita pandurang Nikam</h3><br>
+            <h3>Age : 24</h3><br>
+            <h3>Occupation : Web Developer</h3><br>
+
+            <h3>Education:</h3> 
+            <h4>B.Sc: R.B.M College(2018-2021)</h4>
+            <h4>M.Sc: Shivraj College (2021-2023)</h4><br>
+            
+            <h3>coures :</h3>
+            <h4>online coure(The python bootcamp )</h4>
+            <h4>full stack deloper(pursuing)</h4><br>
+            
+            <h3>skills :</h3>
+              <ul class="lang">
+                  <li>HTML</li>
+                  <li>CSS</li>
+                  <li>Javascript</li>
+                  <li>Jquery</li>
+                  <li>Boostrap</li>
+                  <li>Anguler</li>
+              </ul>
+              
+        </div>
+
+    </section>
+    <section id="skills">
+        <main id="proj">
+            <span > 
+                <img src="resume (2).jpeg" alt="img"  id="pj">
+                <h3>Discription</h3>
+                <p>It is a my resume . It is a build only Html and use of table tag. Html stand for HyperText Markup Language.</p>
+                <a href="../HTML/cv.html">Resume Tamplet</a>
+            </span>
+            <span> 
+                <img src="portfoli.jpeg" alt="img" id="pj">
+                <h3>Discription</h3>
+                <p>It is a my portfolio. It is a build CSS and HTML.It a use Internal style, Display flex ,anchor tag ,table tag.It is a responsive website. </p>
+                <a href="#">Portfolio</a>
+
+            </span>
+            <span> 
+                <img src="calcuteter.jpeg" alt="img" id="pj">
+                <h3>Discription</h3>
+                <p>It is a build in Html ,Css and Javascript. It is a use of onclick function. we use of DOM traversing and DOM manipulation </p>
+                <a href="../css/calculator.html">Calculator</a>
+
+            </span>
+            <span> 
+                <img src="resume tamplet.jpeg" alt="img" id="pj">
+                <h3>Discription</h3>
+                <p>It is a build in Angular and Boostrap. It is use of databinding , modal. User input your information in modal than this information create the resume tamplet.  </p>
+                <a href="  http://localhost:4200/">Create Resume</a>
+            </span>  
+        </main>
+    </section>
+
+    <section id="contact">
+       
+            <div class="d5">
+                 <div class="d6">
+                     <div class="contact">
+                          <h1 class="last">Contact Me:</h1>
+                          <h3><strong>Email:</strong>  vinitanikam2000@gmail.com</h3>
+                          <h3><strong>Contact No :</strong>  7758023575</h3>
+                         <aside id="cont">
+                           <a href="https://www.linkedin.com/in/vinita-nikam-118517262/">
+                             <img src="linkedin.png" alt="img" id="img" ></a>
+                          <a href="https://www.naukri.com/mnjuser/homepage">
+                             <img src="naukri.webp" alt="img" id="img" ></a>
+                          <a href="https://github.com/">
+                             <img src="git.png" alt="img" id="img">
+                          </a>
+                         </aside>
+               
+                         <a href="Vinita Nikam _ Full Stack Developer 1_removed.pdf"><input type="button" value="View Resume"></a>
+
+                     </div>
+                  </div>
+               
+    
+                  <div class="d3">
+                        <div class="d4">
+                            <form>
+                     
+                              <label><strong>Enter Your Name :</strong><br>
+                                 <input type="text" placeholder="Name">
+                             </label><br><br>
+                             <label><strong>Enter Your Email :</strong><br>
+                              <input type="text" placeholder="Email">
+                             </label><br><br>
+                            
+                             <label><strong>Message:</strong><br>
+                                <textarea name="your msg" id="add" cols="20" rows="5"></textarea> 
+                               </label><br><br>
+                              <a href=""><button type="submit" >Contact Me</button></a>
+                         </form>
+                     </div>
+                  </div>
+              </div>
+            
+    </section>   
+     
+</body>
+</html>
